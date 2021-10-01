@@ -1,0 +1,29 @@
+[
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/"
+    },
+    "httpResponse": {
+      "body": "It's alive!"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/simpleRequest"
+    },
+    "httpResponse": {
+      "body": "simple response"
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/error"
+    },
+    "httpResponse": {
+      "body": "ERROR!",
+      "statusCode": 500
+    }
+  }
+]
