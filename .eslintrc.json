@@ -1,0 +1,33 @@
+{
+    "root": true,
+
+    "env": {
+        "node": true,
+        "codeceptjs/codeceptjs": true
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "import",
+        "codeceptjs"
+    ],
+    "extends": [
+        "airbnb-typescript/base",
+        "prettier",
+        "plugin:codeceptjs/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "project": ["tsconfig.json"]
+    },
+    "rules": {
+        "no-console": ["error", {"allow": ["error", "warn"]}],
+        "no-var": "error",
+        "no-multi-spaces": "error",
+        "no-use-before-define": "error",
+        "prefer-const": "error",
+        "prefer-arrow-callback": "error",
+        "semi": "error"
+//        "indent": "error"
+    }
+}

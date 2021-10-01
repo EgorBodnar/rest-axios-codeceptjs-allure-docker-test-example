@@ -1,0 +1,54 @@
+{
+  "name": "rest_ts_test_axios_codeceptjs_allure-example",
+  "version": "1.0.0",
+  "description": "An example of scalable and easily extensible blackbox REST API tests using defined technology stack",
+  "keywords": [ "codeceptjs", "axios", "ts", "typescript", "allure", "rest", "api", "test", "docker", "eslint", "pretiier", "mockserver"],
+  "scripts": {
+    "lint": "eslint . --ext .js --ext ,ts",
+    "lint:fix": "eslint --fix",
+    "unit:test": "codeceptjs run --tests",
+    "allure:clear": "rm -rf output",
+    "allure:open": "allure serve output",
+    "docker:build": "docker build -t test/node --force-rm  .",
+    "docker:run": "docker run test/node",
+    "docker:start-mock-server": "docker build . -t test/mockserver -f mock-back-end-server/Dockerfile && docker run -p 38391:1080 test/mockserver",
+    "test": "codeceptjs run --tests",
+    "test-in-docker": "npm run docker:build && npm run docker:run"
+  },
+  "dependencies": {
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3",
+    "codeceptjs": "^3.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-plugin-codeceptjs": "^1.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0",
+    "husky": "^7.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run unit:test"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EgorBodnar/rest-ts-test-axios-codeceptjs-allure-example.git"
+  },
+  "author": {
+    "name": "EgorBodnar",
+    "email": "maxameron@gmail.com"
+  }
+}
