@@ -9,6 +9,6 @@
     "moduleResolution": "Node",
     "module": "commonjs",
     "strictNullChecks": true,
-    "types": ["codeceptjs"]
+    "types": ["codeceptjs", "jest"]
   },
 }
