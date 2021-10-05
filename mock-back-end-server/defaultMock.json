@@ -11,10 +11,10 @@
   {
     "httpRequest": {
       "method": "GET",
-      "path": "/simpleRequest"
+      "path": "/simpleEndpoint"
     },
     "httpResponse": {
-      "body": "simple response"
+      "body": "simple response data"
     }
   },
   {
