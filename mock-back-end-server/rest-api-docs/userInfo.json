@@ -1,0 +1,17 @@
+{
+  "httpRequest": {
+    "method": "GET",
+    "path": "/api/userInfo",
+    "headers": {
+      "Authorization": ["9w2sa2337a2df03h6l85b4775q324ewp80e7"]
+    }
+  },
+  "httpResponse": {
+    "body": {
+      "id": 1234,
+      "first_name": "User",
+      "last_name": "Valid",
+      "email": "valid.user@example.com"
+    }
+  }
+}
