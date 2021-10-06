@@ -2,7 +2,7 @@ import HttpService from '../utils/HttpService';
 import { Patron } from '../models/Patron';
 
 export class PatronsService extends HttpService {
-  private readonly path = '/patrons';
+  private readonly path = '/api/patrons';
 
   public requestPatrons = async (): Promise<void> => {
     await this.get(this.path);

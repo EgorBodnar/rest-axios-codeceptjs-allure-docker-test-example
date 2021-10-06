@@ -1,16 +1,23 @@
 import expect from 'expect';
-import { SimpleEndpointService } from '../services/SimpleEndpointService';
+import { ServerInfoService } from '../services/ServerInfoService';
 import { PatronsService } from '../services/PatronsService';
 
 Feature('Public endpoints');
 
-Scenario('/simpleEndpoint should return simple response data', async () => {
-  const simpleEndpointService = new SimpleEndpointService();
+Scenario('/serverInfo should return actual server info data', async () => {
+  const serverInfoService = new ServerInfoService();
 
-  await simpleEndpointService.requestSimpleEndpoint();
+  await serverInfoService.requestGetServerInfo();
 
-  expect(simpleEndpointService.response.status).toBe(200);
-  expect(simpleEndpointService.response.data).toEqual('simple response data');
+  expect(serverInfoService.response.status).toBe(200);
+  expect(serverInfoService.response.data.baseUrl).toEqual('http://localhost');
+  expect(serverInfoService.response.data.serverTitle).toEqual(
+    'Mocked back-end server'
+  );
+  expect(serverInfoService.response.data.version).toEqual('1.0.3');
+  expect(serverInfoService.response.data.buildInfo).toEqual(
+    'Mocked back-end based on MockServer(https://www.mock-server.com). Works in docker container.'
+  );
 });
 
 Scenario('/patrons should return array of Patrons', async () => {
