@@ -1,0 +1,9 @@
+ {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/"
+    },
+    "httpResponse": {
+      "body": "It's alive!"
+    }
+  }

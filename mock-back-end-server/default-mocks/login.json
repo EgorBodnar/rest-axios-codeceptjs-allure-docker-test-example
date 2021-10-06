@@ -1,0 +1,13 @@
+{
+  "httpRequest": {
+    "method": "POST",
+    "path": "/api/login",
+    "body": {
+      "username": "valid.user@example.com",
+      "password": "validPassword"
+    }
+  },
+  "httpResponse": {
+    "body": { "token": "9w2sa2337a2df03h6l85b4775q324ewp80e7" }
+  }
+}

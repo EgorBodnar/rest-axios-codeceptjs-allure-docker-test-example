@@ -1,0 +1,9 @@
+{
+  "httpRequest": {
+    "path": "/api/error"
+  },
+  "httpResponse": {
+    "body": "ERROR!",
+    "statusCode": 500
+  }
+}
