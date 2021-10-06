@@ -26,7 +26,7 @@
     "docker:test:run": "docker run test/node",
     "docker:mock-server:generate-mocks": "node mock-back-end-server/mergeDefaultMocks.js",
     "docker:mock-server:start": "npm run docker:mock-server:generate-mocks && docker build . -t test/mockserver -f mock-back-end-server/Dockerfile && docker run -p 38391:1080 test/mockserver",
-    "test": "codeceptjs run --tests",
+    "test-local": "codeceptjs run --tests",
     "test-in-docker": "npm run docker:build && npm run docker:run"
   },
   "dependencies": {
@@ -52,13 +52,11 @@
     "prettier": "^2.4.1",
     "prettier-eslint": "^13.0.0",
     "pre-commit": "^1.2.2",
-    "pre-push": "^0.1.1",
     "ts-jest": "^27.0.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run unit:test"
+      "pre-commit": "npm run lint && npm run unit:test"
     }
   },
   "prettier": {
