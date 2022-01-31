@@ -44,3 +44,5 @@ Open http://localhost:38391 to check if it works. Should see message: "The Mock 
 
 **to run tests in Docker container**
 ```npm run test-in-docker```
+
+![ Tests in work](testsInWork.gif)
