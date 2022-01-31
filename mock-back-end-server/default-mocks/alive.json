@@ -4,6 +4,6 @@
       "path": "/"
     },
     "httpResponse": {
-      "body": "It's alive!"
+      "body": "<!DOCTYPE html>\n<html>\n<body style=\"background-color:powderblue;\">\n<p style=\"text-align: center;\">&nbsp;</p>\n<p style=\"text-align: center;\">&nbsp;</p>\n<h1 style=\"text-align: center;\"><strong>The Mock Backend server is working properly&nbsp;</strong></h1>\n<h3 style=\"text-align: center;\">Make yourself at home, send new requests</p>\n<p style=\"text-align: center;\">&nbsp;</h3>\n</body>\n</html>\n\n"
     }
   }
