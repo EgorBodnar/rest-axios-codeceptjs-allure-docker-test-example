@@ -32,15 +32,16 @@
   "dependencies": {
     "axios": "^0.21.4",
     "codeceptjs": "^3.1.2",
+    "lodash": "^4.17.17",
     "ts-node": "^10.2.1",
-    "typescript": "^4.4.3",
-    "lodash": "^4.17.17"
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
+    "@types/lodash": "^4.14.176",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
-    "@types/lodash": "^4.14.176",
+    "allure-commandline": "^2.17.2",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.0",
@@ -51,9 +52,9 @@
     "expect": "^27.2.4",
     "husky": "^7.0.2",
     "jest": "^27.0.2",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.4.1",
     "prettier-eslint": "^13.0.0",
-    "pre-commit": "^1.2.2",
     "ts-jest": "^27.0.2"
   },
   "husky": {
