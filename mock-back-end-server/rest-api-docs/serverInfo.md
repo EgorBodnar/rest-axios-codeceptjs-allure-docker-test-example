@@ -1,4 +1,4 @@
-# Show Current User
+# Show Current User Info
 
 Get the details of the currently Authenticated User along with basic
 subscription information.
