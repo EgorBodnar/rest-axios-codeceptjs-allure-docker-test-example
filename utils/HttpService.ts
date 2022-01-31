@@ -150,6 +150,7 @@ export default class HttpService {
     if (error.response) {
       this.response = error.response;
     }
+    this.logHttpResponse();
     throw error;
   };
 
