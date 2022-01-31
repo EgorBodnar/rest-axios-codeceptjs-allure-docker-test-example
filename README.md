@@ -40,7 +40,7 @@ Open http://localhost:38391 to check if it works. Should see message: "The Mock 
 ```npm run test-local```
 
 **to open Allure report after test run**
-```npm allure:open```
+```npm run allure:open```
 
 **to run tests in Docker container**
 ```npm run test-in-docker```
