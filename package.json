@@ -14,7 +14,8 @@
     "docker",
     "eslint",
     "pretiier",
-    "mockserver"
+    "mockserver",
+    "mock-server"
   ],
   "scripts": {
     "lint": "eslint .",

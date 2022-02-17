@@ -1,4 +1,4 @@
-# API testing framework rest-ts-test-axios-codeceptjs-allure-solution-example
+# 🛠️ API testing framework rest-ts-test-axios-codeceptjs-allure-solution-example
 
 
 ```
@@ -22,12 +22,14 @@
 
 ```
 
-## Required presets
+## 🧰 Required presets
 * Docker
 * Node.js
 * JDK or JRE 8+ (For Allure reports only)
 
-## How to run
+## 📜 [Mocked backend REST API documentation](login.md)
+
+## ▶️ How to run
 
 **to start mocked backend server**
 ```npm run docker:mock-server:start```
@@ -45,4 +47,5 @@ Open http://localhost:38391 to check if it works. Should see message: "The Mock 
 **to run tests in Docker container**
 ```npm run test-in-docker```
 
+## 🎥 Demo how it works
 ![ Tests in work](testsInWork.gif)
