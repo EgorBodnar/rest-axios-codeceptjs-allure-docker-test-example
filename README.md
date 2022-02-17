@@ -27,7 +27,7 @@
 * Node.js
 * JDK or JRE 8+ (For Allure reports only)
 
-## 📜 [Mocked backend REST API documentation](login.md)
+## 📜 [Mocked backend REST API documentation](mock-back-end-server/rest-api-docs/README.md)
 
 ## ▶️ How to run
 
