@@ -28,7 +28,7 @@
     "docker:mock-server:generate-mocks": "node mock-back-end-server/mergeDefaultMocks.js",
     "docker:mock-server:start": "npm run docker:mock-server:generate-mocks && docker build . -t test/mockserver -f mock-back-end-server/Dockerfile && docker run -p 38391:1080 test/mockserver",
     "test-local": "codeceptjs run --tests",
-    "test-in-docker": "npm run docker:build && npm run docker:run"
+    "test-in-docker": "npm run docker:test:build && npm run docker:test:run"
   },
   "dependencies": {
     "axios": "^0.21.4",
