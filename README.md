@@ -48,4 +48,4 @@ Open http://localhost:38391 to check if it works. Should see message: "The Mock 
 ```npm run test-in-docker```
 
 ## 🎥 Demo how it works
-![ Tests in work](testsInWork.gif)
+![ Tests in work](doc/gif/testsInWork.gif)
