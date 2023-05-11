@@ -1,5 +1,5 @@
 {
-  "name": "rest_ts_test_axios_codeceptjs_allure-example",
+  "name": "rest-axios-codeceptjs-allure-docker-test-example",
   "version": "1.0.0",
   "description": "An example of scalable and easily extensible blackbox REST API tests using defined technology stack",
   "keywords": [
